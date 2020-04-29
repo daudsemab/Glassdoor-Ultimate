@@ -1,0 +1,172 @@
+.Header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Header-img-large.jpg');
+    background-color: #aeaeae;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 5em 1em 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-font {
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    font-weight: 900;
+    padding: 0.2 0.3em;
+    margin: auto 0px;
+}
+
+span {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #17dcff;
+}
+
+span:hover {
+    cursor: pointer;
+    color: #07c016;
+}
+
+.find-btn {
+    background-color: transparent;
+    border-radius: 0.5em;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: 1rem;
+    padding: 0.4em 0.5em;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    width: 8em;
+}
+.find-btn:hover {
+    color: #17dcff;  
+    border: none;
+}
+
+.middle-part {
+    margin-top: 30vh;
+    color: #fffffff5;
+}
+
+.middle-part h1 {
+    color: #ffffff;
+    font-family: 'Crimson Text', serif;
+    font-size: 3vw;
+}
+
+.middle-paras-container {
+    background-color: rgba(255, 255, 255, 0.945);
+    color: lightslategray;
+    width: 40vw;
+    padding: 2em, 3em;
+    margin: auto;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-para {
+    font-size: 0.9rem;
+    padding: 0px 1em;
+    margin: 1em 1em 1em 0px;
+    border: none;
+    border-right: 1px solid lightslategray;
+}
+
+.middle-para:last-child {
+    padding: none;
+    border-right: none;
+}
+
+
+/* *************************  Media Quiries ************************* */
+
+
+@media screen and (max-width: 1300px) {
+    .middle-paras-container {
+        width: 50vw;
+    }
+
+    .middle-part h1 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .middle-paras-container {
+        width: 60vw
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .middle-paras-container {
+        width: 70vw
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .middle-paras-container {
+        display: none;
+    }
+
+    .above-750 {
+        display: none;
+    }
+
+    .under-750 {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+        padding: 0em 0.5em 0.5em 0.5em;
+    }
+
+    .logo-font {
+        margin: auto auto;
+        font-size: 7vw;
+    }
+
+    span {
+        color: #17dcff;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .under-750 {
+        display: none;
+    }
+
+    .above-750 {
+        margin: auto 0em 0em 0em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    header {
+        padding: 0.5em 1em 1em 1em;
+    }
+
+    .middle-part h1 {
+        font-size: 8vw;
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 410px) {
+    .under-410 {
+        display: none;
+    }
+}

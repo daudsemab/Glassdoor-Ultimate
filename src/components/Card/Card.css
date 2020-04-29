@@ -1,0 +1,73 @@
+.card {
+    background-color: #fafafa;
+    color: lightslategrey;
+    border: 1px solid rgba(22, 143, 190, 0.911);
+    border-radius: 2em;
+    text-align: center;
+    justify-content: center;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    width: 23%;
+    min-width: 270px;
+    height: auto;
+}
+
+.pic-of-employee {
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.main-para {
+    line-height: normal;
+    text-align: start;
+}
+
+h3 {
+    color: rgba(22, 143, 190, 0.911);
+    font-size: 1.3rem;
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .card {
+        width: 80%;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+}
+
+.hire-btn {
+    box-shadow: -1px 9px 21px -8px rgba(22, 143, 190, 0.911);
+    background:linear-gradient(to bottom, rgba(22, 143, 190, 0.911) 5%, #15c3e2 100%);
+    background-color:rgba(22, 143, 190, 0.911);
+    border-radius: 0.5em;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight:bold;
+    padding: 0.8em 1.5em;
+    letter-spacing: 0.03em;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 1px #3d768a;
+    width: 100%;
+}
+.hire-btn:hover {
+    background:linear-gradient(to bottom, #07c016 5%, #1ebb52 100%);
+    background-color: #07c016;             
+}
+.hire-btn:active {
+	position:relative;
+	top:2px;
+}
